@@ -956,9 +956,9 @@ h6 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    padding: 2.5vw 3.889vw 2.5vw 3.889vw;
+    padding: 3.5vw 3.889vw 3.1vw 3.889vw;
     font-size: 5.278vw;
-    line-height: 7.5vw;
+    line-height: 1;
     width: 100%;
     text-align: center;
     margin-bottom: 0;
@@ -2658,12 +2658,14 @@ h6 {
   .terms__title {
     top: 15.278vw;
     font-size: 8.333vw;
-    line-height: 10.278vw;
+    line-height: 1;
     width: 91.944vw;
+    padding-top: 1.111vw;
+    padding-bottom: 0.833vw;
   }
   .terms__title::before {
     width: calc(100% + 3.083vw);
-    top: -0.556vw;
+    top: 0;
   }
   .terms__container {
     padding-top: 41.667vw;
