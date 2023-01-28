@@ -454,6 +454,13 @@ template {
   font-weight: 100;
   font-style: normal;
 }
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-ExtraBold.eot");
+  src: local("Circe ExtraBold"), local("Circe-ExtraBold"), url("../fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
 html,
 body {
   margin: 0;
@@ -956,7 +963,7 @@ h6 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    padding: 3.5vw 3.889vw 3.1vw 3.889vw;
+    padding: 4vw 3.889vw 3.1vw 3.889vw;
     font-size: 5.278vw;
     line-height: 1;
     width: 100%;
@@ -2660,7 +2667,7 @@ h6 {
     font-size: 8.333vw;
     line-height: 1;
     width: 91.944vw;
-    padding-top: 1.111vw;
+    padding-top: 1.9vw;
     padding-bottom: 0.833vw;
   }
   .terms__title::before {
