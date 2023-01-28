@@ -861,14 +861,14 @@ h6 {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 1.528vw 3.681vw 1.042vw 3.681vw;
+  padding: 1.328vw 3.681vw 1.042vw 3.681vw;
   margin-bottom: 2.639vw;
 }
 @media only screen and (min-width: 1441px) {
   .banner__button.button {
     font-size: 30.1px;
     line-height: 42px;
-    padding: 22px 55px 15px 55px;
+    padding: 18px 55px 15px 55px;
     margin-bottom: 38px;
   }
 }
@@ -1264,7 +1264,7 @@ h6 {
 }
 .form__button {
   width: 28.472vw;
-  padding: 0.833vw 2.083vw 1.111vw 2.083vw;
+  padding: 0.833vw 2.083vw 0.9vw 2.083vw;
   background: #0073D4;
   font-weight: 400;
   font-size: 1.25vw;
@@ -1279,7 +1279,7 @@ h6 {
 @media only screen and (min-width: 1441px) {
   .form__button {
     width: 410px;
-    padding: 12px 30px 16px 30px;
+    padding: 14px 30px 14px 30px;
     margin-top: 26px;
     font-size: 18px;
   }
