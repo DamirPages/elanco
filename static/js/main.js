@@ -287,8 +287,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 });
 "use strict";
 
+var _document$querySelect;
+
 var select = document.querySelector('[data-role="nice-select"]');
-NiceSelect.bind(select);
+
+if (select) {
+  NiceSelect.bind(select);
+}
+
 document.querySelectorAll("a[href^='#'").forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -367,7 +373,7 @@ popupCloseButtons.forEach(function (closeBtn) {
     activeScroll();
   });
 });
-document.querySelector('.burger').addEventListener('click', function () {
+(_document$querySelect = document.querySelector('.burger')) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.addEventListener('click', function () {
   document.querySelector('.mobile-menu').classList.toggle('active');
 });
 document.querySelectorAll('.mobile-close').forEach(function (item) {
