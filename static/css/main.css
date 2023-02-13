@@ -1149,12 +1149,23 @@ h6 {
   color: #fff;
 }
 
+.footer-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  .footer-hide {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
   .footer {
-    padding: 39.722vw 5.556vw 13.333vw 5.556vw;
+    padding: 13.333vw 5.556vw 39.722vw 5.556vw;
   }
   .footer .logo {
-    top: 7.5vw;
+    top: auto;
+    bottom: 7.5vw;
     width: 43.611vw;
     height: 21.389vw;
   }
@@ -3423,6 +3434,11 @@ h6 {
 }
 .popup-table-container-moder table th {
   font-size: 9px;
+}
+
+.admin-popup-radio svg, .admin-check-statuses svg {
+  width: 30px;
+  height: 30px;
 }
 
 .admin {
