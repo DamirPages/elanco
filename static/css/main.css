@@ -1321,14 +1321,14 @@ h6 {
   bottom: 0;
   width: 100%;
   font-weight: 200;
-  font-size: 4.597vw;
+  font-size: 3.597vw;
   line-height: 140%;
   text-align: center;
   color: rgba(149, 179, 203, 0.9);
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1670px) {
   .form__info {
-    font-size: 66px;
+    font-size: 64px;
   }
 }
 .form__background {
@@ -1645,7 +1645,7 @@ h6 {
     line-height: 8.278vw;
   }
   .form__background {
-    bottom: 21.944vw;
+    bottom: 23.944vw;
     right: 6.389vw;
     width: 64.722vw;
     height: 95.556vw;
