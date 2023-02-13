@@ -2842,7 +2842,7 @@ h6 {
   background: #FFFFFF;
   border-radius: 0px;
   border: 1px solid #E0E0E0;
-  border-top: none;
+  border-bottom: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3303,7 +3303,7 @@ h6 {
   border-color: #212121;
 }
 .table-control .admin-popup-input {
-  margin-left: 30px;
+  margin-left: 5px;
 }
 .table-control .admin-popup-placeholder {
   color: #212121;
@@ -3312,9 +3312,10 @@ h6 {
   width: 200px;
 }
 
-.admin-select-sort {
+.admin-select.admin-select-sort {
   width: 130px;
   margin-left: 20px;
+  border-bottom: none;
 }
 
 .admin__container table {
