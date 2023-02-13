@@ -2956,6 +2956,15 @@ h6 {
   width: calc(100% + 26px);
 }
 
+.admin-button-accept,
+.admin-button-cancel,
+.admin-button-default,
+.admin-select,
+.admin__profile,
+.admin__logout {
+  cursor: pointer;
+}
+
 .admin-popup {
   position: fixed;
   left: 0;
