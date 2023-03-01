@@ -7,7 +7,7 @@
         <title>Elanco</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <meta name="viewport" content="width=1920px">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta content="telephone=no" name="format-detection">
         <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
@@ -1101,7 +1101,7 @@
             </div>
             <div class="popup__overlay" data-popup-close></div>
         </div>
-        <div class="popup admin-popup admin-popup-checks">
+        <div class="popup admin-popup admin-popup-checks active">
             <!--.active-->
             <div class="admin-popup-container">
                 <div class="popup__close" data-popup-close>
@@ -1122,94 +1122,188 @@
                             <div class="admin-popup-placeholder">
                                 Дата/время отправки чека
                             </div>
-                            <input type="text" value="23:59, 12.01.23">
-                        </div>
-                        <div class="admin-popup-input half">
-                            <div class="admin-popup-placeholder">
-                                Дата чека
-                            </div>
-                            <input type="text" value="23:59, 12.01.23">
-                        </div>
-                        <div class="admin-popup-input half">
-                            <div class="admin-popup-placeholder">
-                                ИНН
-                            </div>
-                            <input type="text" value="465637829202">
+                            <input type="text" name="date-send" value="12.01.23 23:59">
                         </div>
                         <div class="admin-popup-input half">
                             <div class="admin-popup-placeholder">
                                 Дата/время ответного сообщения
                             </div>
-                            <input type="text" value="23:59, 12.01.23">
+                            <input type="text" name="date-callback" value="12.01.23 23:59">
                         </div>
+                        <div class="admin-popup-input half">
+                            <div class="admin-popup-placeholder">
+                                Дата чека
+                            </div>
+                            <input type="text" name="date-check" value="12.01.23 23:59" class="date">
+                        </div>
+                        <div class="admin-popup-input half">
+                            <div class="admin-popup-placeholder">
+                                ИНН
+                            </div>
+                            <input type="number" name="inn" value="465637829202">
+                        </div>
+
+                        <div class="item-info">
+                            <div class="item-info__name">
+                                Форесто
+                            </div>
+                            <div class="item-info-type"></div>
+                            <div class="item-info-count">
+                                <label class="radio-select">
+                                    <input type="radio" name="foresto-count" value="1">
+                                    <span>1</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="foresto-count" value="2">
+                                    <span>2</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="foresto-count" value="3">
+                                    <span>3</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="foresto-count" value="4">
+                                    <span>4</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="foresto-count" value="5">
+                                    <span>5</span>
+                                </label>
+                            </div>
+                            <div class="item-info-value">
+                                <div class="admin-popup-input">
+                                    <div class="admin-popup-placeholder">
+                                        Сумма
+                                    </div>
+                                    <input type="number" name="foresto-sum" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-info">
+                            <div class="item-info__name">
+                                Адвантис
+                            </div>
+                            <div class="item-info-type">
+                                <label class="radio-select">
+                                    <input type="radio" name="advantics-type" value="таб" checked>
+                                    <span>Пипетка</span>
+                                </label>
+                            </div>
+                            <div class="item-info-count">
+                                <label class="radio-select">
+                                    <input type="radio" name="advantics-count" value="1">
+                                    <span>1</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="advantics-count" value="2">
+                                    <span>2</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="advantics-count" value="3">
+                                    <span>3</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="advantics-count" value="4">
+                                    <span>4</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="advantics-count" value="5">
+                                    <span>5</span>
+                                </label>
+                            </div>
+                            <div class="item-info-value">
+                                <div class="admin-popup-input">
+                                    <div class="admin-popup-placeholder">
+                                        Сумма
+                                    </div>
+                                    <input type="number" name="advantics-sum" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-info">
+                            <div class="item-info__name">
+                                Мильбемакс
+                            </div>
+                            <div class="item-info-type">
+                                <label class="radio-select">
+                                    <input type="radio" name="mibelmaks-type" value="таб">
+                                    <span>таб</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="mibelmaks-type" value="уп">
+                                    <span>уп</span>
+                                </label>
+                            </div>
+                            <div class="item-info-count">
+                                <label class="radio-select">
+                                    <input type="radio" name="mibelmaks-count" value="1">
+                                    <span>1</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="mibelmaks-count" value="2">
+                                    <span>2</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="mibelmaks-count" value="3">
+                                    <span>3</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="mibelmaks-count" value="4">
+                                    <span>4</span>
+                                </label>
+                                <label class="radio-select">
+                                    <input type="radio" name="mibelmaks-count" value="5">
+                                    <span>5</span>
+                                </label>
+                            </div>
+                            <div class="item-info-value">
+                                <div class="admin-popup-input">
+                                    <div class="admin-popup-placeholder">
+                                        Сумма
+                                    </div>
+                                    <input type="number" name="mibelmaks-sum" value="">
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="admin-popup-input half">
                             <div class="admin-popup-placeholder">
                                 Статус чека
                             </div>
-                            <input type="text" value="На модерации">
+                            <input type="text" name="status" value="На модерации" class="status-input">
                         </div>
+
                         <div class="admin-check-statuses half">
-                            <div class="admin-check-status">
+                            <div class="admin-check-status" data-status-change="Принят">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.6453 19.96L3.992 13.3067L5.86824 11.4171L10.6453 16.1942L20.7451 6.09445L22.6213 7.984L10.6453 19.96ZM13.3067 0C11.5592 0 9.82886 0.344187 8.21443 1.01291C6.59999 1.68163 5.13307 2.66179 3.89743 3.89743C1.40195 6.39292 0 9.77752 0 13.3067C0 16.8358 1.40195 20.2204 3.89743 22.7159C5.13307 23.9515 6.59999 24.9317 8.21443 25.6004C9.82886 26.2691 11.5592 26.6133 13.3067 26.6133C16.8358 26.6133 20.2204 25.2114 22.7159 22.7159C25.2114 20.2204 26.6133 16.8358 26.6133 13.3067C26.6133 11.5592 26.2691 9.82886 25.6004 8.21443C24.9317 6.59999 23.9515 5.13307 22.7159 3.89743C21.4803 2.66179 20.0133 1.68163 18.3989 1.01291C16.7845 0.344187 15.0541 0 13.3067 0Z"
                                     fill="#47CC26" />
                                 </svg>
                             </div>
-                            <div class="admin-check-status active">
+                            <div class="admin-check-status active" data-status-change="На модерации">
                                 <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.8558 9.58202H13.1181V6.8443H15.8558V9.58202ZM15.8558 20.5329H13.1181V12.3197H15.8558V20.5329ZM14.4869 0C12.6893 0 10.9093 0.354066 9.24854 1.04198C7.58776 1.7299 6.07874 2.73819 4.80764 4.0093C2.24053 6.57641 0.79834 10.0582 0.79834 13.6886C0.79834 17.319 2.24053 20.8008 4.80764 23.3679C6.07874 24.639 7.58776 25.6473 9.24854 26.3352C10.9093 27.0231 12.6893 27.3772 14.4869 27.3772C18.1174 27.3772 21.5991 25.935 24.1662 23.3679C26.7334 20.8008 28.1755 17.319 28.1755 13.6886C28.1755 11.891 27.8215 10.111 27.1336 8.4502C26.4456 6.78942 25.4374 5.2804 24.1662 4.0093C22.8951 2.73819 21.3861 1.7299 19.7253 1.04198C18.0646 0.354066 16.2846 0 14.4869 0V0Z"
                                     fill="#0073D4" />
                                 </svg>
                             </div>
-                            <div class="admin-check-status">
+                            <div class="admin-check-status" data-status-change="Отклонён">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="15.5536" cy="15.5536" r="15.5536" fill="#FF0000" fill-opacity="0.54" />
                                     <path d="M9.90537 8.74819L15.8264 14.6692L21.7466 8.74905L22.9022 9.90464L16.982 15.8248L22.9031 21.7459L21.7476 22.9013L15.8266 16.9803L9.90452 22.9023L8.74892 21.7467L14.671 15.8247L8.74993 9.90364L9.90537 8.74819Z" fill="white" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="admin-check-item">
-                            <div class="admin-popup-input">
-                                <div class="admin-popup-placeholder">
-                                    Адвантикс - наименование SKU из чека
-                                </div>
-                                <input type="text" value="663399; 266339; 564930">
+
+                        <div class="admin-popup-textarea">
+                            <div class="admin-popup-placeholder">
+                                Комментарий
                             </div>
-                            <div class="admin-popup-input">
-                                <div class="admin-popup-placeholder">
-                                    Стоимость
-                                </div>
-                                <input type="text" value="1000₽; 450₽; 200₽ ">
-                            </div>
+                            <textarea name="comment" id=""></textarea>
                         </div>
-                        <div class="admin-check-item">
-                            <div class="admin-popup-input">
-                                <div class="admin-popup-placeholder">
-                                    Мильбемакс - наименование SKU из чека
-                                </div>
-                                <input type="text" value="663399">
-                            </div>
-                            <div class="admin-popup-input">
-                                <div class="admin-popup-placeholder">
-                                    Стоимость
-                                </div>
-                                <input type="text" value="1000₽">
-                            </div>
-                        </div>
-                        <div class="admin-check-item">
-                            <div class="admin-popup-input">
-                                <div class="admin-popup-placeholder">
-                                    Форесто - наименование SKU из чека
-                                </div>
-                                <input type="text" value="266339; 564930">
-                            </div>
-                            <div class="admin-popup-input">
-                                <div class="admin-popup-placeholder">
-                                    Стоимость
-                                </div>
-                                <input type="text" value="450₽; 200₽ ">
-                            </div>
-                        </div>
+
                         <div class="admin-button-default">
                             Сохранить
                         </div>
