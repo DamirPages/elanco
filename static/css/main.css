@@ -3078,6 +3078,9 @@ h6 {
 .admin-popup .half {
   width: calc(50% - 12px);
 }
+.admin-popup .third {
+  width: calc(33.333333% - 12px);
+}
 .admin-popup-placeholder {
   position: absolute;
   left: 13px;
